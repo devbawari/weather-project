@@ -9,7 +9,7 @@ let target="delhi"
 const fetchdata=async(target)=>
 {
 try {
-    const url=`http://api.weatherapi.com/v1/current.json?key=cd59faf0ec5b4d9c853192805231407&q=${target}`;
+    const url=`https://api.weatherapi.com/v1/current.json?key=cd59faf0ec5b4d9c853192805231407&q=${target}`;
 const response=await fetch(url);
 const data=await response.json();
 const {current:{temp_c,condition:{icon,text}},location:{name,localtime}}=data
